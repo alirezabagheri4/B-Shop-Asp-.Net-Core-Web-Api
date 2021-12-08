@@ -1,4 +1,3 @@
-using DataAccess;
 using DataAccess.Context;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -46,7 +45,7 @@ namespace B_Shop
             {
                 endpoints.MapControllers();
             });
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
