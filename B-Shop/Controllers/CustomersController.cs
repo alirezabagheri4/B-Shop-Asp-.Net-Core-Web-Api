@@ -32,7 +32,7 @@ namespace B_Shop.Controllers
             return Ok(result);
         }
    
-        [HttpGet("{id}")]
+        [HttpGet("{id:int}")]
         public async Task<IActionResult> GetCustomer([FromRoute] int id)
         {
             if (await CustomerExists(id))
@@ -63,7 +63,7 @@ namespace B_Shop.Controllers
             return CreatedAtAction("GetCustomer", new { id = customer.Id }, customer);
         }
 
-        [HttpPut("{id}")]
+        [HttpPut("{id:int}")]
         public async Task<IActionResult> PutCustomer([FromRoute] int id, [FromBody] Customer customer)
         {
             await _customerRepository.PutCustomer(id, customer);

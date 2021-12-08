@@ -28,7 +28,7 @@ namespace B_Shop.Controllers
         }
 
         // GET: api/Products/5
-        [HttpGet("{id}")]
+        [HttpGet("{id:int}")]
         public async Task<IActionResult> GetProducts([FromRoute] int id)
         {
             if (!ModelState.IsValid)
@@ -47,7 +47,7 @@ namespace B_Shop.Controllers
         }
 
         // PUT: api/Products/5
-        [HttpPut("{id}")]
+        [HttpPut("{id:int}")]
         public async Task<IActionResult> PutProducts([FromRoute] int id, [FromBody] Product products)
         {
             if (!ModelState.IsValid)
@@ -82,7 +82,7 @@ namespace B_Shop.Controllers
         }
 
         // DELETE: api/Products/5
-        [HttpDelete("{id}")]
+        [HttpDelete("{id:int}")]
         public async Task<IActionResult> DeleteProducts([FromRoute] int id)
         {
             if (!ModelState.IsValid)
