@@ -4,4 +4,14 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.TestHost" Version="3.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Framework">
+      <HintPath>..\..\Framework\Framework\bin\Debug\netcoreapp3.1\Framework.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

@@ -1,6 +1,7 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
-namespace Shop.Domain.Model
+namespace Core.Domain.DomainModel
 {
     public partial class Customer
     {
@@ -29,5 +30,7 @@ namespace Shop.Domain.Model
         public string ZipCode { get; set; }
 
         public byte? Type { get; set; }
+
+        public List<Order> Orders { get; set; }
     }
 }

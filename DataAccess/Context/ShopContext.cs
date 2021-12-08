@@ -1,10 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Shop.Domain.Model;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Core.Domain.DomainModel;
+using Microsoft.EntityFrameworkCore;
 
-namespace DataAccess
+namespace DataAccess.Context
 {
     public class ShopContext : DbContext
     {

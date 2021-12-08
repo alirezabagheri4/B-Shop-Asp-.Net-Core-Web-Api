@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Shop.Domain.Model
+namespace Core.Domain.DomainModel
 {
     public partial class ProductGroup
     {

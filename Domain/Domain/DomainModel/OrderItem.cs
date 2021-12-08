@@ -1,4 +1,4 @@
-﻿namespace Shop.Domain.Model
+﻿namespace Core.Domain.DomainModel
 {
     public partial class OrderItem
     {
